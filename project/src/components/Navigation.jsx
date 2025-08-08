@@ -44,16 +44,6 @@ function Navigation() {
             >
               📝 To Do
             </Link>
-            <Link 
-              to="/about" 
-              className={`py-4 px-6 border-b-2 transition-colors ${
-                location.pathname === '/about' 
-                  ? 'border-white text-white' 
-                  : 'border-transparent text-gray-300 hover:text-white hover:border-gray-300'
-              }`}
-            >
-              About
-            </Link>
           </div>
           <button
             onClick={handleLogout}

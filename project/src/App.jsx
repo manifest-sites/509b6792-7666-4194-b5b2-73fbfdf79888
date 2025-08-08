@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Monetization from './components/monetization/Monetization'
 import FerretApp from './components/FerretApp'
-import About from './components/About'
 import TodoApp from './components/TodoApp'
 import Navigation from './components/Navigation'
 import { getRouterBasename } from './utils/routerUtils'
@@ -15,7 +14,6 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<FerretApp />} />
-          <Route path="/about" element={<About />} />
           <Route path="/todo" element={<TodoApp />} />
         </Routes>
       </Router>
