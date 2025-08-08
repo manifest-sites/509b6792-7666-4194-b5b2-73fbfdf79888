@@ -35,6 +35,16 @@ function Navigation() {
               🐰 Ferret Facts
             </Link>
             <Link 
+              to="/todo" 
+              className={`py-4 px-6 border-b-2 transition-colors ${
+                location.pathname === '/todo' 
+                  ? 'border-white text-white' 
+                  : 'border-transparent text-gray-300 hover:text-white hover:border-gray-300'
+              }`}
+            >
+              📝 To Do
+            </Link>
+            <Link 
               to="/about" 
               className={`py-4 px-6 border-b-2 transition-colors ${
                 location.pathname === '/about' 
