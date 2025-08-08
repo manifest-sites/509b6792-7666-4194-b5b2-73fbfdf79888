@@ -5,7 +5,7 @@ function Navigation() {
   const location = useLocation()
   
   return (
-    <nav className="bg-black text-white">
+    <nav className="bg-amber-800 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex space-x-8">
           <Link 
@@ -16,7 +16,7 @@ function Navigation() {
                 : 'border-transparent text-gray-300 hover:text-white hover:border-gray-300'
             }`}
           >
-            Flash Cards
+            🐰 Ferret Facts
           </Link>
           <Link 
             to="/about" 
